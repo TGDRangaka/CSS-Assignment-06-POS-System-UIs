@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="/assests//bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assests/css/customer_form.css">
+    <link rel="stylesheet" href="assests/css/customer_item_forms.css">
 
     <title>POS | Item</title>
 </head>
@@ -14,7 +14,7 @@
 
     <nav id="nav_bar" class="navbar bg-body-tertiary mb-5">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="index.html">
               <img src="assests/Ijse_logo 1.png" alt="Logo" class="d-inline-block align-text-top">
             </a>
             <ul class="nav nav-underline">
@@ -22,10 +22,10 @@
                   <a id="dashboard" class="nav-link" aria-current="page" href="index.html">Dashboard</a>
                 </li>
                 <li class="nav-item">
-                  <a id="customer" class="nav-link active" href="customer_form.html">Customer</a>
+                  <a id="customer" class="nav-link" href="customer_form.html">Customer</a>
                 </li>
                 <li class="nav-item">
-                  <a id="item" class="nav-link" href="item_form.html">Item</a>
+                  <a id="item" class="nav-link active" href="item_form.html">Item</a>
                 </li>
                 <li class="nav-item">
                   <a id="order" class="nav-link" href="order_form.html">Order</a>
@@ -39,7 +39,7 @@
         <div class="row justify-content-md-center mb-4">
             <div class="col col-lg-10 col-12">
                 <form class="d-flex" role="search">
-                    <input id="search" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <input id="search" class="form-control me-2" type="search" placeholder="Search Item" aria-label="Search">
                     <!-- <button id="search-btn" class="btn btn-outline-success" type="submit">Search</button> -->
                     <i class="fa-solid fa-magnifying-glass search-btn"></i>
                 </form>
@@ -50,20 +50,20 @@
             <div class="col col-lg-4 col-md-12 col-12 container">
                 <form action="" class="row">
                     <div class="mb-3 col-lg-12 col-md-4">
-                        <label for="id" class="form-label">Customer ID</label>
-                        <input type="text" class="form-control" id="id" placeholder="C001">
+                        <label for="id" class="form-label">Item ID</label>
+                        <input type="text" class="form-control" id="id" placeholder="I001">
                     </div>
                     <div class="mb-3 col-lg-12 col-md-8">
-                        <label for="name" class="form-label">Customer Name</label>
+                        <label for="name" class="form-label">Item Name</label>
                         <input type="text" class="form-control" id="name">
                     </div>
                     <div class="mb-3 col-lg-12 col-md-8">
-                        <label for="address" class="form-label">Address</label>
-                        <input type="text" class="form-control" id="address">
+                        <label for="price" class="form-label">Price</label>
+                        <input type="number" class="form-control" id="price" placeholder="Rs: 0000.00">
                     </div>
                     <div class="mb-3 col-lg-12 col-md-4">
-                        <label for="salary" class="form-label">Salary</label>
-                        <input type="number" class="form-control" id="salary" placeholder="000000.00">
+                        <label for="qty" class="form-label">Qty</label>
+                        <input type="number" class="form-control" id="qty" placeholder="00">
                     </div>
                     <div class="buttons">
                         <button type="submit" class="btn btn-success mb-1">Save</button>
@@ -78,130 +78,124 @@
                     <thead>
                         <th>Id</th>
                         <th>Name</th>
-                        <th>Address</th>
-                        <th>Salary</th>
+                        <th>Price</th>
+                        <th>Qty</th>
                     </thead>
     
                     <tbody>
                         <tr>
-                            <td>001</td>
-                            <td>Dilshan</td>
-                            <td>Panadura</td>
-                            <td>10000</td>
+                            <td>I001</td>
+                            <td>Soap</td>
+                            <td>150.00</td>
+                            <td>76</td>
                         </tr>
                         <tr>
-                            <td>001</td>
-                            <td>Dilshan</td>
-                            <td>Panadura</td>
-                            <td>10000</td>
+                            <td>I001</td>
+                            <td>Soap</td>
+                            <td>150.00</td>
+                            <td>76</td>
                         </tr>
                         <tr>
-                            <td>001</td>
-                            <td>Dilshan</td>
-                            <td>Panadura</td>
-                            <td>10000</td>
+                            <td>I001</td>
+                            <td>Soap</td>
+                            <td>150.00</td>
+                            <td>76</td>
                         </tr>
                         <tr>
-                            <td>001</td>
-                            <td>Dilshan</td>
-                            <td>Panadura</td>
-                            <td>10000</td>
+                            <td>I001</td>
+                            <td>Soap</td>
+                            <td>150.00</td>
+                            <td>76</td>
                         </tr>
                         <tr>
-                            <td>001</td>
-                            <td>Dilshan</td>
-                            <td>Panadura</td>
-                            <td>10000</td>
+                            <td>I001</td>
+                            <td>Soap</td>
+                            <td>150.00</td>
+                            <td>76</td>
                         </tr>
                         <tr>
-                            <td>001</td>
-                            <td>Dilshan</td>
-                            <td>Panadura</td>
-                            <td>10000</td>
+                            <td>I001</td>
+                            <td>Soap</td>
+                            <td>150.00</td>
+                            <td>76</td>
                         </tr>
                         <tr>
-                            <td>001</td>
-                            <td>Dilshan</td>
-                            <td>Panadura</td>
-                            <td>10000</td>
+                            <td>I001</td>
+                            <td>Soap</td>
+                            <td>150.00</td>
+                            <td>76</td>
                         </tr>
                         <tr>
-                            <td>001</td>
-                            <td>Dilshan</td>
-                            <td>Panadura</td>
-                            <td>10000</td>
+                            <td>I001</td>
+                            <td>Soap</td>
+                            <td>150.00</td>
+                            <td>76</td>
                         </tr>
                         <tr>
-                            <td>001</td>
-                            <td>Dilshan</td>
-                            <td>Panadura</td>
-                            <td>10000</td>
+                            <td>I001</td>
+                            <td>Soap</td>
+                            <td>150.00</td>
+                            <td>76</td>
                         </tr>
                         <tr>
-                            <td>001</td>
-                            <td>Dilshan</td>
-                            <td>Panadura</td>
-                            <td>10000</td>
+                            <td>I001</td>
+                            <td>Soap</td>
+                            <td>150.00</td>
+                            <td>76</td>
                         </tr>
                         <tr>
-                            <td>001</td>
-                            <td>Dilshan</td>
-                            <td>Panadura</td>
-                            <td>10000</td>
+                            <td>I001</td>
+                            <td>Soap</td>
+                            <td>150.00</td>
+                            <td>76</td>
                         </tr>
                         <tr>
-                            <td>001</td>
-                            <td>Dilshan</td>
-                            <td>Panadura</td>
-                            <td>10000</td>
+                            <td>I001</td>
+                            <td>Soap</td>
+                            <td>150.00</td>
+                            <td>76</td>
                         </tr>
                         <tr>
-                            <td>001</td>
-                            <td>Dilshan</td>
-                            <td>Panadura</td>
-                            <td>10000</td>
+                            <td>I001</td>
+                            <td>Soap</td>
+                            <td>150.00</td>
+                            <td>76</td>
                         </tr>
                         <tr>
-                            <td>001</td>
-                            <td>Dilshan</td>
-                            <td>Panadura</td>
-                            <td>10000</td>
+                            <td>I001</td>
+                            <td>Soap</td>
+                            <td>150.00</td>
+                            <td>76</td>
                         </tr>
                         <tr>
-                            <td>001</td>
-                            <td>Dilshan</td>
-                            <td>Panadura</td>
-                            <td>10000</td>
+                            <td>I001</td>
+                            <td>Soap</td>
+                            <td>150.00</td>
+                            <td>76</td>
                         </tr>
                         <tr>
-                            <td>001</td>
-                            <td>Dilshan</td>
-                            <td>Panadura</td>
-                            <td>10000</td>
+                            <td>I001</td>
+                            <td>Soap</td>
+                            <td>150.00</td>
+                            <td>76</td>
                         </tr>
                         <tr>
-                            <td>001</td>
-                            <td>Dilshan</td>
-                            <td>Panadura</td>
-                            <td>10000</td>
+                            <td>I001</td>
+                            <td>Soap</td>
+                            <td>150.00</td>
+                            <td>76</td>
                         </tr>
                         <tr>
-                            <td>001</td>
-                            <td>Dilshan</td>
-                            <td>Panadura</td>
-                            <td>10000</td>
+                            <td>I001</td>
+                            <td>Soap</td>
+                            <td>150.00</td>
+                            <td>76</td>
                         </tr>
                         <tr>
-                            <td>001</td>
-                            <td>Dilshan</td>
-                            <td>Panadura</td>
-                            <td>10000</td>
-                        </tr>
-                        <tr>
-                            <td>001</td>
-                            <td>Dilshan</td>
-                            <td>Panadura</td>
-                            <td>10000</td>
+                            <td>I001</td>
+                            <td>Soap</td>
+                            <td>150.00</td>
+                            <td>76</td>
                         </tr>
                     </tbody>
                 </table>

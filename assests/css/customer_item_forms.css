@@ -29,7 +29,7 @@ nav div {
     right: 20px;
 }
 
-#id, #name, #address, #salary {
+#id, #name, #address, #salary, #price, #qty {
     border: 1px solid black;
 }
 
